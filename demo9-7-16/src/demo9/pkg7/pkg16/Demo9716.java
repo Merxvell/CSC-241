@@ -11,6 +11,20 @@ package demo9.pkg7.pkg16;
  */
 public class Demo9716 {
 
+    public static long factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+    public static long fibonacci(int a) {
+    if(a <= 1)
+        return 1;
+    else
+        return fibonacci(a-1)+fibonacci(a-2);
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -20,17 +34,18 @@ public class Demo9716 {
         double ratio;
         for (int i = 2; i <= 50; i++) {
             third = first + second;
-            ratio = (double)third/second;
-            long low=(long)Math.pow(1.5,i);
-            long high=(long)Math.pow(1.66,i);
+            ratio = (double) third / second;
+            long low = (long) Math.pow(1.5, i);
+            long high = (long) Math.pow(1.66, i);
             System.out.println(i + " " + third + " " + ratio + " " + low + " " + high);
             first = second;
             second = third;
         }
-        System.out.println((1+Math.sqrt(5))/2);
+        System.out.println((1 + Math.sqrt(5)) / 2);
         //FUCKING KILL ME WHY IS HE SO MONOTONE
         //WHY THE FUCK DOES HE USE JGRASP, WHY NOT USE AN IDE THAT ISN'T IDIOTIC
-
+        System.out.println(factorial(25));
+        System.out.println(fibonacci(45));
     }
 
 }
