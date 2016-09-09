@@ -45,7 +45,7 @@ public class Demo9716 {
         //FUCKING KILL ME WHY IS HE SO MONOTONE
         //WHY THE FUCK DOES HE USE JGRASP, WHY NOT USE AN IDE THAT ISN'T IDIOTIC
         System.out.println(factorial(25));
-        System.out.println(fibonacci(45));
+        System.out.println(fibonacci(30));
     }
 
 }
