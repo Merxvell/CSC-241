@@ -59,6 +59,16 @@ public class Demo91416 {
         //now use temp
         temp = backwardList; System.out.println(temp);
         temp = forwardList; System.out.println(temp);
+        
+        //more effective way to traverse list
+        temp.clear();
+        for(int j=0;j<4;j++){
+            number=(int)backwardList.remove();
+            System.out.println(number);
+            temp.addFirst(number);
+        }
+        System.out.println(temp);
+        backwardList = temp;
     }
 
 }
